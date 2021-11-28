@@ -2,7 +2,9 @@ package com.example.androidtutorials;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class ExplicitIntentActivity extends AppCompatActivity {
@@ -18,5 +20,11 @@ public class ExplicitIntentActivity extends AppCompatActivity {
        Bundle bundle =  getIntent().getExtras();
        String name = bundle.getString("name");
        tvExplicitIntentName.setText("Hello "+name+"!");
+    }
+
+    public void toImplicitIntentActivity(View view) {
+
+        Intent intent = new Intent(this,ImplicitIntentActivity.class);
+        startActivity(intent);
     }
 }
