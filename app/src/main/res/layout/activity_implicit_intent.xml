@@ -26,6 +26,28 @@
         tools:layout_editor_absoluteY="43dp"
         android:layout_marginBottom="20dp"/>
 
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/want_to_search_anything"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:background="#E4DCDC"/>
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:onClick="clickIntent"
+            android:layout_margin="20dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginBottom="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -63,22 +85,24 @@
         android:layout_margin="20dp"
         android:padding="10dp"/>
 
-    <EditText
-        android:id="@+id/etSearch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/want_to_search_anything"
-        android:padding="10dp"
-        android:layout_margin="20dp"
-        android:background="@android:color/darker_gray"/>
-    <Button
-        android:id="@+id/btnSearch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/search"
-        android:onClick="clickIntent"
-        android:layout_margin="20dp"
-        android:padding="10dp"/>
+        <EditText
+            android:id="@+id/etSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#E4DCDC"
+            android:hint="Type message.."
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_message"
+            android:onClick="clickIntent"
+            android:layout_margin="20dp"
+            android:padding="10dp"/>
+
 
     <Button
         android:id="@+id/nextBtn"
